@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InternFetch – Smart Internship Finder</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;900&display=swap');
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-gray-900/80 border-b border-gray-700">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-3xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent">InternScout</h1>
+      <nav class="space-x-6 text-sm font-semibold">
+        <a href="{% url 'homePage_intership' %}" class="hover:text-blue-400 transition">Home</a>
+        <a href="{% url 'live_internship' %}" class="hover:text-purple-400 transition">Find Internships</a>
+        <a href="#features" class="hover:text-blue-400 transition">Features</a>
+        <a href="#" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full text-white shadow-md transition">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-28 px-6 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-800/20 via-purple-700/10 to-pink-600/10 rounded-lg pointer-events-none"></div>
+    <div class="max-w-4xl mx-auto relative z-10">
+      <h2 class="text-5xl md:text-6xl font-black leading-tight mb-6">
+        Smarter Way to <span class="text-blue-400">Find Internships</span>
+      </h2>
+      <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-10">
+        Real-time scraping, seamless export, and personalized filters – all in one sleek platform.
+      </p>
+      <a href="{% url 'live_internship' %}" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-3 rounded-full font-semibold hover:scale-105 transition text-white shadow-xl">
+        Explore Internships
+      </a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-24 bg-gradient-to-b from-gray-900 to-gray-950">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center text-white mb-16">✨ What Makes <span class="text-blue-400">InternScout</span> Different?</h3>
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="bg-gray-800 rounded-2xl border border-gray-700 p-8 shadow-md hover:shadow-xl hover:border-blue-500 transition">
+          <h4 class="text-xl font-semibold text-blue-400 mb-2">🔍 Live Scraping</h4>
+          <p class="text-gray-300">Instantly pulls the latest internship data from trusted websites using modern scrapers.</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl border border-gray-700 p-8 shadow-md hover:shadow-xl hover:border-purple-500 transition">
+          <h4 class="text-xl font-semibold text-purple-400 mb-2">📄 Export to CSV</h4>
+          <p class="text-gray-300">Download your filtered internship data in CSV format with a single click.</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl border border-gray-700 p-8 shadow-md hover:shadow-xl hover:border-pink-500 transition">
+          <h4 class="text-xl font-semibold text-pink-400 mb-2">🧠 Smart Filters</h4>
+          <p class="text-gray-300">Filter by role, city, pay, and more — find exactly what fits you, faster.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-gray-950 border-t border-gray-800 py-10">
+  <div class="max-w-6xl mx-auto text-center text-sm text-gray-400">
+    <p>© 2025 <span class="text-white font-semibold">InternScout</span>. Empowering futures.</p>
+    <p>Pioneering future opportunities with precision and purpose — by <span class="text-purple-400 font-medium">Faraz</span> & <span class="text-purple-400 font-medium">Javeriya</span>.</p>
+    <div class="mt-4">
+      <a href="#" class="mx-2 hover:text-white transition">Privacy Policy</a> |
+      <a href="#" class="mx-2 hover:text-white transition">Terms of Service</a> |
+      <a href="#" class="mx-2 hover:text-white transition">Contact</a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
