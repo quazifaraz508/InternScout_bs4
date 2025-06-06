@@ -1,4 +1,7 @@
 Django>=5.0.6
-selenium>=4.24.0
+beautifulsoup4
+lxml
+html5lib
+
 urllib3>=2.2.2
 webdriver-manager>=4.0.2
